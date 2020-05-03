@@ -7,16 +7,10 @@ section: content
 ## Getting Started
 _Blueprint_ is an open-source tool for **rapidly generating multiple** Laravel components from a **single, human readable** definition.
 
-Blueprint has two core goals:
+Blueprint has two driving principles:
 
 1. Increase development speed
 2. Promote Laravel conventions
-
-TODO: What does this mean...
-
-## Demo Videos
-Watch a quick [demo of Blueprint](https://www.youtube.com/watch?v=A_gUCwni_6c) in action and continue reading this document to get started.
-
 
 ## Requirements
 Blueprint requires a Laravel application running version 6.0 or higher.

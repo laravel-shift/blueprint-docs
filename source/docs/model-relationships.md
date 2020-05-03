@@ -28,5 +28,5 @@ While you may specify the `relationships` anywhere within the model section, Blu
 For each of these relationships, Blueprint will add the respective [Eloquent relationship](https://laravel.com/docs/7.x/eloquent-relationships) method within the generated model class. In addition, Blueprint will automatically generate the "pivot table" migration for any `belongsToMany` relationship.
 
 ^^^
-TODO: Order of migrations is important
+When defining relationships or [foreign keys](/docs/keys-and-indexes) it's important to remember the referenced tables must exist. While Blueprint makes an effort to generate migrations for "pivot tables" last, it is still possible encounter these errors. If so, you may define your models without these relationships or constraints and add them manually later.
 ^^^

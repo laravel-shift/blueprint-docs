@@ -85,11 +85,12 @@ redirect: post.show with:post
 
 <a name="render-statement"></a>
 **render**
-Generates a `return view();` statement complete with a template reference and dat
+Generates a `return view();` statement for the referenced template with any additional view data as a comma separated list.
+
 For example:
 
 ```yaml
-view: post.show with:post
+view: post.show with:post,foo,bar
 ```
 
 When the template does not exist, Blueprint will generate the Blade template for the view.
@@ -97,11 +98,15 @@ When the template does not exist, Blueprint will generate the Blade template for
 
 <a name="resource-statement"></a>
 **resource**
-TODO: Generates a `return view();` statement complete with a template reference and dat
+Generates response statement for the [Resource](https://laravel.com/docs/7.x/eloquent-resources) to the referenced model. You may prefix the plural model reference with `collection` or `paginate` to return a resource collection or paginated collection, respectively.
+
+If the resource for the referenced model does not exist, Blueprint will create one using the model definition.
+
 For example:
 
 ```yaml
-view: post.show with:post
+resource: user
+resource: paginate:users
 ```
 
 When the template does not exist, Blueprint will generate the Blade template for the view.
@@ -109,11 +114,12 @@ When the template does not exist, Blueprint will generate the Blade template for
 
 <a name="respond-statement"></a>
 **respond**
-TODO: Generates a `return view();` statement complete with a template reference and dat
+Generates a response which returns the given value. If the value is an integer, Blueprint will generate the proper `response()` statement using the value as the status code. Otherwise, the value will be used as the name of the variable to return.
+
 For example:
 
 ```yaml
-view: post.show with:post
+respond: post.show with:post
 ```
 
 When the template does not exist, Blueprint will generate the Blade template for the view.
@@ -141,7 +147,7 @@ If the referenced _mailable_ class does not exist, Blueprint will create one usi
 
 <a name="store-statement"></a>
 **store**
-TODO: Generates a statement to [flash data](https://laravel.com/docs/session#flash-data) to the session. Blueprint will slugify the `value` as the session key and expands the reference as the session value.
+Generates a statement to [store data](https://laravel.com/docs/7.x/session#storing-data) to the session. Blueprint will slugify the `value` as the session key and expands the reference as the session value.
 
 For example:
 
@@ -158,9 +164,13 @@ $request->session()->put('post-title', $post->title);
 
 <a name="update-statement"></a>
 **update**
-TODO: Generates an Eloquent statement for updating a model. Blueprint uses the controller action to infer which statement to generate.
+Generates an Eloquent statement for updating the referenced model. Blueprint will use the values from a preceding `validate` statement to determine the columns to update.
 
-For example, for a `store` controller action, Blueprint will generate a `Model::create()` statement. Otherwise, a `$model->save()` statement will be generated.
+For example:
+
+```yaml
+update: post
+```
 
 
 <a name="validate-statement"></a>
