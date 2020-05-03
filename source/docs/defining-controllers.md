@@ -25,8 +25,6 @@ controllers:
   Comment:
     show:
       render: comment.show with:show
-
-  # additional controller...
 ```
 
 From this definition, Blueprint will generate two controllers. A `PostController` with `index`, `create`, and `store` actions. And a `CommentController` with a `show` action.

@@ -7,9 +7,9 @@ section: content
 ## Model Shorthands
 Blueprint provides several _shorthands_ when defining models. While using these may at time appear as invalid YAML, they are provided for developer convenience. Blueprint will properly expand these shorthands into valid YAML before parsing the draft file.
 
-The primary model shorthand Blueprint provides is the automatic generation of the `id`, `created_at`, and `updated_at` columns on every model. You never need to specify these columns when defining models. Blueprint will always automatically add them prepend and append them to your column list accordingly.
+Blueprint provides an implicit model shorthand by automatically generating the `id` and _timestamp_ (`created_at`, and `updated_at`) columns on every model. You never need to specify these columns when defining models.
 
-Of course, you are able to define these yourself at anytime. For example, if you wish for the _id_ column to be a different column type.
+Of course, you are able to define these yourself at anytime. For example, if you want to use a different column type for the _id_ column, like `uuid`.
 
 You may also disable them by marking them as `false`. For example, to disable the _timestamp_ columns, you may add `timestamps: false` to your model definition. If you wish to generate the _timestamp_ columns with timezone column types, you may use the `timezonesTz` shorthand.
 

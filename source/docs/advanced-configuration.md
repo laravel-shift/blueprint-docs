@@ -18,4 +18,4 @@ This will add a copy of the `blueprint.php` file in the `config` folder. Similar
 In summary, there are options for customizing the paths and namespaces for generated components, as well as options to toggle code generation. For example, to always generate foreign key constraints or PHPDocs for model properties.
 
 To see all the available option, browse the [`blueprint.php` configuration file on GitHub](https://github.com/laravel-shift/blueprint/blob/master/config/blueprint.php).
-￼￼
+

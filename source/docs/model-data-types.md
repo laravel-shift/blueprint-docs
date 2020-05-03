@@ -5,7 +5,7 @@ extends: _layouts.documentation
 section: content
 ---
 ## Model Data Types
-Blueprint supports all of the [available column types](https://laravel.com/docs/migrations#creating-columns) within Laravel. Blueprint also has a built-in column type of `id`. This one of the [model shorthands](/docs/model-shorthands).
+Blueprint supports all of the [available column types](https://laravel.com/docs/migrations#creating-columns) within Laravel. Blueprint also has a built-in column type of `id`. This is one of the [model shorthands](/docs/model-shorthands).
 
 Some of these column types support additional attributes. For example, the `string` column type accepts a length, `decimal` accepts a _precision_ and _scale_, and an `enum` may accept a list of values.
 
@@ -17,7 +17,7 @@ total: decimal:8,2
 status: enum:pending,successful,failed
 ```
 
-You may also specific _modifiers_ for each column. Blueprint supports most of the [column modifiers](https://laravel.com/docs/migrations#column-modifiers) available in Laravel, including: `autoIncrement`, `charset`, `collation`, `default`, `foreign`, `index`, `nullable`, `primary`, `unsigned`, `unique`, and `useCurrent`.
+You may also specify _modifiers_ for each column. Blueprint supports most of the [column modifiers](https://laravel.com/docs/migrations#column-modifiers) available in Laravel, including: `autoIncrement`, `charset`, `collation`, `default`, `foreign`, `index`, `nullable`, `primary`, `unsigned`, `unique`, and `useCurrent`.
 
 Similar to the column type attributes, the `foreign` modifier also supports attributes. This is discussed in [Keys and Indexes](/docs/keys-and-indexes).
 

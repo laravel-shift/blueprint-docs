@@ -9,7 +9,7 @@ Blueprint supports defining keys and indexes on your models through the column d
 
 Within the column definition, you may specify a key or index using the `id` column type or the `foreign`, `index`, or `unique` column modifiers.
 
-The simplest of these are the `index` and `unique` modifier. Blueprint will generate the necessary code to the migration to add the _index_. In turn, Laravel will create an index for this column.
+The simplest of these are the `index` and `unique` modifiers. Blueprint will generate the necessary code to the migration to add the _index_. In turn, Laravel will create an index for this column.
 
 The `foreign` column modifier will also generate the necessary code to create an index on the column. In addition, it will generate code to add the reference and cascade "on delete" constraints.
 

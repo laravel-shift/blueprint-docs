@@ -6,24 +6,18 @@ section: content
 ---
 ## Extending Blueprint
 
-From the beginning blueprint was designed to be extendable. There’s so much more you can do with the draft file.
+From the beginning, Blueprint was designed to be extendable. There’s so much more code you could generate from the _draft_ file, as well as add your own syntax.
 
-Blueprints primary focus will always be models and controllers. However you could generate a lot more from the draft file.
+Blueprint's primary focus will always be models and controllers. However, Blueprint encourages the Laravel community to create additional packages for generating even more components.
 
-For example crud reviews, or components for Laravel nova.
+For example, generating HTML for CRUD views, or components for [Laravel Nova](https://nova.laravel.com/).
 
-Underneath the blueprint is registered as a singleton. Intern each of the lectures and generators are registered within blueprint.
+Blueprint is [bound to the container](https://laravel.com/docs/7.x/container#binding) as a _singleton_. This means you can resolve an instance of the `Blueprint` object either from within your own application or another Laravel package.
 
-As such you may register your own Lexar or generator to output additional code when blueprint build is run.
+All of the parsing and code generation is managed by this `Blueprint`. As such, you may register your own _lexer_ or _generator_ to generate additional code when `blueprint:build` is run.
 
-By registering a Lexar blueprint will pass the poorest tokens from the Yamo file. From there you could turn these into your own local objects to then iterate over and generate code.
+By registering a lexer, Blueprint will pass an array of the parsed tokens from the YAML file. With these, you could build your own data structures to add the Blueprints _tree_.
 
-Each generator is then called with V for syntax tree of post models and controllers, as well as any additional items you may have placed in the tree.
+Each registered generator is then called with tree and responsible for generating code. By default, this contains the parsed `models` and `controllers`. However, it may also contain additional items you may have placed in the tree with a lexer.
 
-The following illustrates a very simple extension to blueprint which adds an additional author section and parts is that out.
-
-Using this as a template you are welcome to extend blueprint in anyway you can think to expand upon its draft file statements or the code it generates.
-
-￼￼￼￼￼￼￼
-
-￼￼
+The following project was created to illustrate a very simple extension to Blueprint. You may use this as a template to extend Blueprint in anyway you can think to use in your own projects or share with the Laravel community.

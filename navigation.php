@@ -10,7 +10,7 @@ return [
         ],
     ],
     'Defining Models' => [
-        'url' => '/docs/definining-models',
+        'url' => '/docs/defining-models',
         'children' => [
             'Types & Modifiers' => '/docs/model-data-types',
             'Keys and Indexes' => '/docs/keys-and-indexes',
@@ -18,7 +18,7 @@ return [
             'Shorthands' => '/docs/model-shorthands',
         ],
     ],
-    'Definition Controllers' => [
+    'Defining Controllers' => [
         'url' => '/docs/defining-controllers',
         'children' => [
             'Statements' => '/docs/controller-statements',

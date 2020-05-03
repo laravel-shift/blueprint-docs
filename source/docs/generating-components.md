@@ -63,4 +63,4 @@ From just these 20 lines of YAML, Blueprint will generate all of the following L
 - A _Blade template_ of `post/index.blade.php` rendered by `PostController@index`.
 - An [HTTP Test](https://laravel.com/docs/7.x/http-tests) complete with respective _arrange_, _act_, and _assert_ sections for the `PostController` actions.
 
-While this draft file only defines a single model and controller, you may define multiple models and controllers. In fact, this is just an example. Continue reading to learn more about [defining models](/docs/defining-models) and [defining controllers](/docs/defining-controllers).
+While this draft file only defines a single model and controller, you may define multiple models and controllers.
