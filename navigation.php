@@ -30,4 +30,5 @@ return [
     'Configuration' => '/docs/advanced-configuration',
     'Extending' => '/docs/extending-blueprint',
     'Contributing' => '/docs/contributing',
+    'Videos' => '/docs/videos'
 ];
