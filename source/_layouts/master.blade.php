@@ -69,16 +69,7 @@
         @stack('scripts')
 
         <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
-            <ul class="flex flex-col md:flex-row justify-center">
-                <li class="md:mr-2">
-                    &copy; <a href="https://tighten.co" title="Tighten website">Tighten</a> {{ date('Y') }}.
-                </li>
-
-                <li>
-                    Built with <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten">Jigsaw</a>
-                    and <a href="https://tailwindcss.com" title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
-                </li>
-            </ul>
+          <p><i>Blueprint</i> is an open source project by <a href="https://laravelshift.com" rel="external">Shift</a>. Blueprint Docs built with <a href="http://jigsaw.tighten.co" rel="external">Jigsaw</a> and <a href="https://tailwindcss.com" rel="external">Tailwind CSS</a>.
         </footer>
     </body>
 </html>
