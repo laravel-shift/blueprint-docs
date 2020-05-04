@@ -1,11 +1,13 @@
 ---
 title: Controller Statements
-description: Description
+description: Blueprint comes with an expressive set of statements to define behavior common within Laravel controllers.
 extends: _layouts.documentation
 section: content
 ---
 ## Controller Statements
-Blueprint comes with an expressive set of statements which implicitly define additional components to generate. Each statement is a `key: value` pair.
+Blueprint comes with an expressive set of statements which define code within each controller action, but also additional components to generate.
+
+Each statement is a `key: value` pair.
 
 The `key` defines the _type_ of statement to generate. Currently, Blueprint supports the following types of statements: `delete`, `dispatch`, `find`, `fire`, `flash`, `query`, `redirect`, `render`, `resource`, `respond`, `save`, `send`, `store`, `update`, `validate`.
 

@@ -1,6 +1,6 @@
 ---
 title: Model Data Types
-description: Description
+description: Blueprint supports all of the column types within Laravel, as well as a few shorthands for defining models.
 extends: _layouts.documentation
 section: content
 ---

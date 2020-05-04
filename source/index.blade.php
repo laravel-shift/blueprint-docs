@@ -6,7 +6,7 @@
         <div class="mt-8">
             <h1 id="intro-docs-template">{{ $page->siteName }}</h1>
 
-            <h2 id="intro-powered-by-jigsaw" class="font-light mt-4">{{ $page->siteDescription }}</h2>
+            <h2 id="intro-powered-by-jigsaw" class="font-light mt-4">Code generation for Laravel developers</h2>
 
             <p class="text-lg"><b>Rapidly develop</b> multiple Laravel components<br>from a <b>single, human readable</b> domain laungage.</p>
 

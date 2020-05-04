@@ -1,6 +1,6 @@
 ---
 title: Controller Shorthands
-description: Description
+description: Learn to use syntax shorthands to generate controllers even faster with Blueprint.
 extends: _layouts.documentation
 section: content
 ---

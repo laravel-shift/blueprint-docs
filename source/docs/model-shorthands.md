@@ -1,6 +1,6 @@
 ---
 title: Model Shorthands
-description: Description
+description: Learn to use syntax shorthands to generate models even faster with Blueprint.
 extends: _layouts.documentation
 section: content
 ---

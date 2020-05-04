@@ -1,6 +1,6 @@
 ---
 title: Contributing to Blueprint
-description: Description
+description: Contribute to Blueprint by submitting an issue, opening a Pull Request, adding to the docs, or sharing your love of Blueprint on Twitter.
 extends: _layouts.documentation
 section: content
 ---

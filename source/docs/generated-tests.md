@@ -1,6 +1,6 @@
 ---
 title: Generated Tests
-description: Description
+description: Blueprint generates an HTTP tests for any of the controller actions you define.
 extends: _layouts.documentation
 section: content
 ---

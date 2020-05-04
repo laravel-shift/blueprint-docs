@@ -12,7 +12,7 @@ Blueprint has two driving principles:
 1. Increase development speed
 2. Promote Laravel conventions
 
-## Requirements
+### Requirements
 Blueprint requires a Laravel application running version 6.0 or higher.
 
 While Blueprint may be more flexible in a future version, it currently assumes a standard project structure using the default `App` namespace.

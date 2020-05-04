@@ -1,6 +1,6 @@
 ---
 title: Defining Controllers
-description: Description
+description: Learn how to define controllers to generate not only controllers, but events, jobs, mailables, and more with Blueprint.
 extends: _layouts.documentation
 section: content
 ---

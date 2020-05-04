@@ -6,7 +6,7 @@ return [
     'baseUrl' => '',
     'production' => false,
     'siteName' => 'Blueprint',
-    'siteDescription' => 'Code generation for Laravel developers',
+    'siteDescription' => 'A code generation tool for Laravel developers to rapidly generate multiple Laravel components from a single, human readable file.',
 
     // Algolia DocSearch credentials
     'docsearchApiKey' => '',

@@ -1,6 +1,6 @@
 ---
 title: Defining Models
-description: Description
+description: Learn how to define models to generate not only models, but migrations, factories, and more with Blueprint.
 extends: _layouts.documentation
 section: content
 ---

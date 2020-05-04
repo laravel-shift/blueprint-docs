@@ -1,6 +1,6 @@
 ---
 title: Model References
-description: Description
+description: Learn how to leverage Blueprint to infer model references or specify your own.
 extends: _layouts.documentation
 section: content
 ---

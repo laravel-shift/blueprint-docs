@@ -1,6 +1,6 @@
 ---
 title: Videos
-description: Description
+description: A list of video demonstrations, tutorials, and deep-dives on Blueprint.
 extends: _layouts.documentation
 section: content
 ---

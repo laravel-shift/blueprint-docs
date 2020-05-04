@@ -1,6 +1,6 @@
 ---
-title: Title
-description: Description
+title: Model Relationships
+description: Blueprint also allows you to define many of the relationships available within Laravel.
 extends: _layouts.documentation
 section: content
 ---
