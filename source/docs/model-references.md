@@ -25,21 +25,33 @@ Many times within a controller you will be referencing a model. Blueprint attemp
 
 However, there may be some statements where you need to reference additional models. You may do this by specifying the name of the model. This may be a model that you are generating in the current draft file or an existing model within your application.
 
-You should reference these models using their class name. For example, `User`. If you have namespaced the model, you should prefix it with the appropriate namespace relative to the model and space. For example, `Admin\User`.
+You should reference these models using their class name. For example, `User`. If you have namespaced the model, you should prefix it with the appropriate namespace relative to the model namespace. For example, `Admin\User`.
 
 If you wish to also reference an attribute of a model for one of the statements, you may specify it using dot notation. For example, `User.name`.
 
 Let’s consider the following draft file:
 
 ```yaml
-
+controllers:
+  Post:
+    index:
+      query: all
+      render: post.index with:posts
+    create:
+      find: user.id
+      render: post.create with:user
+    store:
+      validate: title, published_at
+      save: post
+      redirect: post.show
+    show:
+      query: all:comments
+      render: post.show with:post,comments
 
 ```
 
-Based on the model name, Blueprint willing for using the model post for any context that doesn’t reference a model by name.
+Based on the model name, Blueprint will use the model `Post` for any context that doesn’t reference a model by name.
 
-In this case, the validate statement will use title, publish that on the post model.
+In this case, the `validate` statement will use `title`, `published_at` on the `Post` model.
 
-However, well the index action will query all posts, the show action will query all comments.
-
-And the create action will find the user by ID.
+The `index` action will query all _posts_. However, the `show` action will query all _comments_. And the `create` action will find the `User` model by the `id` attribute.
