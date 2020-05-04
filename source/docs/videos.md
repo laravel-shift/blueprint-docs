@@ -5,8 +5,6 @@ extends: _layouts.documentation
 section: content
 ---
 ## Blueprint Videos
-
-## Demo Videos
 Below are a list of videos which demonstrate using Blueprint.
 
 - [Quick Demo](https://www.youtube.com/watch?v=A_gUCwni_6c) on YouTube
