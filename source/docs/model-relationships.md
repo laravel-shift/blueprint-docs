@@ -19,8 +19,8 @@ models:
     title: string:400
     published_at: timestamp nullable
     relationships:
-      hasMany: Comments
-      belongsToMany: Media, Sites
+      hasMany: Comment
+      belongsToMany: Media, Site
 ```
 
 While you may specify the `relationships` anywhere within the model section, Blueprint recommends doing so at the bottom.
