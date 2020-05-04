@@ -30,8 +30,5 @@ Finally, while the `id` column type does not create an explicit index on the dat
 Similar to the `foreign` column modifier, you may specify an attribute on the `id` column type. In this case, you specify the foreign model name or the model and column name using dot notation.
 
 ^^^
-**When to use `foreign`?**
-It is only necessary to specify `foreign` when you want the constraints. Otherwise, `id` alone is all that is necessary to create the appropriate relationships between your models.
-
-If you always want the constraints, you should take a look at the `use_constraints` option in the [advanced configuration](/docs/advanced-configuration).
+Blueprint will always create model relationships for `id` and `uuid` columns. So it is only necessary to specify `foreign` when you want to generate constraints. If you always want to generate foreign key constraints, you should enable at the `use_constraints` [configuration option](/docs/advanced-configuration).
 ^^^
