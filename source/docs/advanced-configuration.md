@@ -10,7 +10,7 @@ Blueprint aims to provide sensible defaults which align nicely with Laravel's co
 To do so, you may publish the configuration file with the following command:
 
 ```sh
-php artisan vendor:publish --tag=config --provider='Blueprint\ServiceProvider'
+php artisan vendor:publish --tag=blueprint-config
 ```
 
 This will add a copy of the `blueprint.php` file in the `config` folder. Similar to the default Laravel configuration files, each of the configuration options are preceded by a detailed header comment.
