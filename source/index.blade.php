@@ -8,7 +8,7 @@
 
             <h2 id="intro-powered-by-jigsaw" class="font-light mt-4">Code generation for Laravel developers</h2>
 
-            <p class="text-lg"><b>Rapidly develop</b> multiple Laravel components<br>from a <b>single, human readable</b> domain laungage.</p>
+            <p class="text-lg"><b>Rapidly develop</b> multiple Laravel components<br>from a <b>single, human readable</b> domain language.</p>
 
             <div class="flex my-10">
                 <a href="/docs/getting-started" title="Blueprint documentation" class="bg-blue-500 hover:bg-blue-600 font-normal text-white hover:text-white rounded mr-4 py-2 px-6">Get Started</a>
