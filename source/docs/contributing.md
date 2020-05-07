@@ -4,7 +4,7 @@ description: Contribute to Blueprint by submitting an issue, opening a Pull Requ
 extends: _layouts.documentation
 section: content
 ---
-## Contributing to Blueprint
+## Contributing to Blueprint {#contributing-to-blueprint}
 Contributions may be made by submitting a Pull Request against the `master` branch.
 
 Submitted PRs should:

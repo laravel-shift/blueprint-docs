@@ -4,7 +4,7 @@ description: Blueprint supports all of the column types within Laravel, as well 
 extends: _layouts.documentation
 section: content
 ---
-## Model Data Types
+## Model Data Types {#model-data-types}
 Blueprint supports all of the [available column types](https://laravel.com/docs/migrations#creating-columns) within Laravel. Blueprint also has a built-in column type of `id`. This is one of the [model shorthands](/docs/model-shorthands).
 
 Some of these column types support additional attributes. For example, the `string` column type accepts a length, `decimal` accepts a _precision_ and _scale_, and an `enum` may accept a list of values.

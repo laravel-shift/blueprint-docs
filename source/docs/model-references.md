@@ -4,7 +4,7 @@ description: Learn how to leverage Blueprint to infer model references or specif
 extends: _layouts.documentation
 section: content
 ---
-## Model References
+## Model References {#model-references}
 For convenience, Blueprint will use the name of a controller to infer the related model. For example, Blueprint will assume a `PostController` relates to a `Post` model.
 
 Blueprint also supports a dot (`.`) syntax for more complex references. This allows you to define values which reference columns on other models.

@@ -4,7 +4,7 @@ description: Build your own add-ons to generate even more code or add your own s
 extends: _layouts.documentation
 section: content
 ---
-## Extending Blueprint
+## Extending Blueprint {#extending-blueprint}
 From the beginning, Blueprint was designed to be extendable. There’s so much more code you could generate from the _draft_ file, as well as add your own syntax.
 
 Blueprint's primary focus will always be models and controllers. However, Blueprint encourages the Laravel community to create additional packages for generating even more components.

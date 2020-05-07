@@ -4,7 +4,7 @@ description: Learn how to define controllers to generate not only controllers, b
 extends: _layouts.documentation
 section: content
 ---
-## Defining Controllers
+## Defining Controllers {#defining-controllers}
 Similar to [defining models](/docs/defining-models), Blueprint also supports defining _controllers_. You may do so within the `controllers` section, listing controllers by name. For each controller, you may define multiple `actions` which contain a list of _statements_.
 
 Consider the `controllers` section of the following draft file:

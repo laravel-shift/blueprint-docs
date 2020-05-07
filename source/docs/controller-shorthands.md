@@ -4,7 +4,7 @@ description: Learn to use syntax shorthands to generate controllers even faster 
 extends: _layouts.documentation
 section: content
 ---
-## Controller Shorthands
+## Controller Shorthands {#controller-shorthands}
 In addition to some of the statement shorthands and model reference conveniences, Blueprint also offers a resource shorthand.
 
 This aligns with Laravel‘s preference for creating [resource controllers](https://laravel.com/docs/7.x/controllers#resource-controllers).

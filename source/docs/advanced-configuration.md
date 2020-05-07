@@ -4,7 +4,7 @@ description: Publish the configuration file to configure Blueprint to follow you
 extends: _layouts.documentation
 section: content
 ---
-## Blueprint Configuration
+## Blueprint Configuration {#blueprint-configuration}
 Blueprint aims to provide sensible defaults which align nicely with Laravel's conventions. However, you are free to configure Blueprint to follow your own custom conventions.
 
 To do so, you may publish the configuration file with the following command:

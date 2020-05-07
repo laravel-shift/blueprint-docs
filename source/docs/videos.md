@@ -4,7 +4,7 @@ description: A list of video demonstrations, tutorials, and deep-dives on Bluepr
 extends: _layouts.documentation
 section: content
 ---
-## Blueprint Videos
+## Blueprint Videos {#blueprint-videos}
 Below are a list of videos which demonstrate using Blueprint.
 
 - [Quick Demo](https://www.youtube.com/watch?v=A_gUCwni_6c) on YouTube

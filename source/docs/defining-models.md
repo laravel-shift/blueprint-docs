@@ -4,7 +4,7 @@ description: Learn how to define models to generate not only models, but migrati
 extends: _layouts.documentation
 section: content
 ---
-## Defining Models
+## Defining Models {#defining-models}
 Within the `models` section of a draft file you may define multiple models. Each model is defined with a _name_ followed by a list of columns. Columns are `key: value` pairs where `key` is the column name and `value` defines its attributes.
 
 Expanding on the example above, this draft file defines multiple models:

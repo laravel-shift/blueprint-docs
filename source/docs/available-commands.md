@@ -4,7 +4,7 @@ description: Blueprint comes with a set of artisan commands for generating new c
 extends: _layouts.documentation
 section: content
 ---
-## Blueprint Commands
+## Blueprint Commands {#blueprint-commands}
 Blueprint comes with a set of `artisan` commands which are helpful during code generation. All of these commands are under the `blueprint` namespace.
 
 While we will cover each of the commands below, you may get additional help for any of these commands by using the `--help` option. For example:
@@ -13,7 +13,7 @@ While we will cover each of the commands below, you may get additional help for 
 php artisan blueprint:build --help
 ```
 
-### Build Command
+### Build Command {#build-command}
 The `blueprint:build` command is the one you'll use most often as this handles [Generating Components](/docs/generating-components).
 
 It accepts a single argument of path to your _draft_ file. This argument is optional. By default, Blueprint will attempt to load a `draft.yaml` (or `draft.yml`) file from the project root folder.
@@ -22,7 +22,7 @@ As such, it's convenient to use the `draft.yaml` file for defining components, b
 
 When complete, `blueprint:build` will output a list of the files it created and updated.
 
-### Erase Command
+### Erase Command {#erase-command}
 Blueprint also comes with a `blueprint:erase` command. Anytime you run `blueprint:build`, the list of generated components is cached in a local `.blueprint` file.
 
 The `blueprint:erase` command can be used to _undo_ the last `blueprint:build` command. Upon running this command, any of the files generated during the last _build_ will be deleted.
@@ -33,7 +33,7 @@ If you realize a mistake after running `blueprint:build` and would like to _rebu
 While the `blueprint:erase` command is offered for convenience, its capabilities are limited. Instead, Blueprint  recommends running `blueprint:build` from a _clean working state_. This way, you can use version control commands to _undo_ the changes with finer control.
 ^^^
 
-### Trace Command
+### Trace Command {#trace-command}
 When using Blueprint with existing applications, you may need to reference existing models when generating new components. Furthermore, even though Blueprint caches the generated model definitions in a `.blueprint` file, this file may become outdated as you continue to develop your application.
 
 At anytime, you may run the `blueprint:trace` command to have Blueprint analyze your application and update its cache with all of your existing models.

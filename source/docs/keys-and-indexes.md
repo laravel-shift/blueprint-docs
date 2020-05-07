@@ -4,7 +4,7 @@ description: Blueprint supports keys and indexes on your models through the colu
 extends: _layouts.documentation
 section: content
 ---
-## Model Keys and Indexes
+## Model Keys and Indexes {#model-keys-indexes}
 Blueprint supports keys and indexes on your models through the column definition and by leveraging convention.
 
 Within the column definition, you may specify a key or index using the `id` column type or the `foreign`, `index`, or `unique` column modifiers.

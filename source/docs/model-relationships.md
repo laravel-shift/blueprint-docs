@@ -4,7 +4,7 @@ description: Blueprint also allows you to define many of the relationships avail
 extends: _layouts.documentation
 section: content
 ---
-## Model Relationships
+## Model Relationships {#model-relationships}
 Blueprint also allows you to define many of the relationships available within Laravel, including: `belongsTo`, `hasOne`, `hasMany`, and `belongsToMany`.
 
 In fact, the `belongsTo` relationship is automatically generated for any column defined with the `id` column type.

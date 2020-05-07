@@ -4,12 +4,12 @@ description: Learn how to rapidly generate Laravel components using a Blueprint 
 extends: _layouts.documentation
 section: content
 ---
-## Generating Components
+## Generating Components {#generating-components}
 Using Blueprint's `artisan` commands you may generate multiple Laravel components from a _draft_ file. The draft file contains a [definition](#defining-components) using a YAML syntax, with a few _shorthands_ for convenience.
 
 By default, the `blueprint:build` command attempts to load a `draft.yaml` (or `draft.yml`) file. While you are welcome to create your own _draft_ files, it's common to simply reuse the `draft.yaml` file over and over again to continue to generate code for your application.
 
-### Draft file syntax
+### Draft file syntax {#draft-file-syntax}
 Within the draft file you define _models_ and _controllers_ using an expressive, human-readable YAML syntax.
 
 Let's review the following draft file:
@@ -47,7 +47,7 @@ Blueprint also leverages conventions and uses shorthands whenever possible. For 
 
 You also don't have to specify the _Controller_ suffix when defining a controller. Blueprint automatically appends it when not present. All of this aligns with Blueprints goal of _rapid development_.
 
-### The generated code
+### Generated code {#generated-code}
 From just these 20 lines of YAML, Blueprint will generate all of the following Laravel components:
 
 - A _model_ class for `Post` complete with `fillable`, `casts`, and `dates` properties, as well as relationships methods.

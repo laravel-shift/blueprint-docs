@@ -4,14 +4,14 @@ description: Add Blueprint to your Laravel application with Composer and setup y
 extends: _layouts.documentation
 section: content
 ---
-## Installing Blueprint
+## Installing Blueprint {#installing-blueprint}
 You can install Blueprint via Composer with the following command:
 
 ```sh
 composer require --dev laravel-shift/blueprint
 ```
 
-### Additional Packages
+### Additional Packages {#additional-packages}
 Blueprint also _suggests_ installing the [Laravel Test Assertions package](https://github.com/jasonmccreary/laravel-test-assertions), as the generated tests may use some of the additional, helpful assertions provided by this package.
 
 You may do so with the following command:
@@ -20,7 +20,7 @@ You may do so with the following command:
 composer require --dev jasonmccreary/laravel-test-assertions
 ```
 
-### Ignoring Blueprint files
+### Ignoring Blueprint files {#ignoring-blueprint-files}
 You may also consider ignoring files Blueprint uses from version control. We'll talk about these files more in [Generating Components](/docs/generating-components). But for now, these files are mainly used as a "scratch pad" or "local cache" and as such it's unlikely you'd want to track their changes.
 
 You may quickly add these files to your `.gitignore` with the following command:
