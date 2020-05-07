@@ -106,6 +106,7 @@ li {
 ol,
 ul {
     @apply .my-4;
+    @apply .list-inside;
 }
 
 ol {
