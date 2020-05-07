@@ -62,7 +62,7 @@
                     @endif
                 </div>
 
-                <div class="hidden lg:flex lg:flex-1 items-center justify-end">
+                <div class="hidden lg:flex lg:w-32 items-center justify-end">
                   <a href="https://github.com/laravel-shift/blueprint" title="Blueprint on GitHub" class="flex"><img src="/assets/img/logo-github.png" alt="GitHub Octocat logo"></a>
                 </div>
             </div>
