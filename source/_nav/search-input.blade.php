@@ -1,47 +1,25 @@
-<button
-    title="Start searching"
-    type="button"
-    class="flex md:hidden bg-gray-100 hover:bg-blue-100 justify-center items-center border border-gray-500 rounded-full focus:outline-none h-10 px-3"
-    onclick="searchInput.toggle()"
->
-    <img src="/assets/img/magnifying-glass.svg" alt="search icon" class="h-4 w-4 max-w-none">
-</button>
-
-<div id="js-search-input" class="docsearch-input__wrapper hidden md:block">
+<div id="js-search-input" class="docsearch-input__wrapper hidden md:block relative">
     <label for="search" class="hidden">Search</label>
+    <input id="docsearch-input" name="docsearch" class="docsearch-input transition-colors duration-100 ease-in-out focus:outline-0 border border-transparent focus:bg-white focus:border-gray-300 placeholder-gray-600 rounded-lg bg-gray-200 py-2 pr-4 pl-6 block w-full appearance-none leading-normal" type="text" placeholder="search the docs (press &quot;/&quot; to focus)">
 
-    <input
-        id="docsearch-input"
-        class="docsearch-input relative block h-10 transition-fast w-full bg-gray-100 outline-none rounded-full text-gray-700 border border-gray-500 focus:border-blue-400 ml-auto px-4 pb-0"
-        name="docsearch"
-        type="text"
-        placeholder="Search"
-    >
-
-    <button
-        class="md:hidden absolute pin-t pin-r h-full font-light text-3xl text-blue-500 hover:text-blue-600 focus:outline-none -mt-px pr-7"
-        onclick="searchInput.toggle()"
-    >&times;</button>
+    <button class="md:hidden absolute pin-t pin-r h-full font-light text-3xl text-blue-500 hover:text-blue-600 focus:outline-none -mt-px pr-7">&times;</button>
 </div>
 
 @push('scripts')
     @if ($page->docsearchApiKey && $page->docsearchIndexName)
         <script type="text/javascript">
+            document.onkeyup = function (e) {
+                if (e.key === '/') {
+                    document.getElementById('docsearch-input').focus();
+                }
+            };
+
             docsearch({
                 apiKey: '{{ $page->docsearchApiKey }}',
                 indexName: '{{ $page->docsearchIndexName }}',
                 inputSelector: '#docsearch-input',
                 debug: false // Set debug to true if you want to inspect the dropdown
             });
-
-            const searchInput = {
-                toggle() {
-                    const menu = document.getElementById('js-search-input');
-                    menu.classList.toggle('hidden');
-                    menu.classList.toggle('md:block');
-                    document.getElementById('docsearch-input').focus();
-                },
-            }
         </script>
     @endif
 @endpush

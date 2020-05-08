@@ -4,18 +4,6 @@
     background-repeat: no-repeat;
     text-indent: 1.2em;
 
-    @screen lg {
-        &:focus {
-            @apply .w-2/3;
-        }
-    }
-
-    @screen xl {
-        &:focus {
-            @apply .w-1/2;
-        }
-    }
-
     &__wrapper {
         @apply absolute;
         @apply bg-white;
@@ -39,10 +27,9 @@
     @apply .w-full;
 
     .ds-dropdown-menu {
-        @apply .w-full;
-
-        max-width: 750px !important;
-        min-width: auto !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
 
         .algolia-docsearch-suggestion {
             .algolia-docsearch-suggestion--content {
