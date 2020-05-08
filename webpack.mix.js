@@ -25,9 +25,4 @@ mix.js('source/_assets/js/main.js', 'js')
         processCssUrls: false,
         postCss: [tailwindcss()],
     })
-    .purgeCss({
-        extensions: ['html', 'md', 'js', 'php', 'vue'],
-        folders: ['build_*'],
-        whitelistPatterns: [/language/, /hljs/, /algolia/, /ds-dropdown-menu/],
-    })
     .version();
