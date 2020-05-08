@@ -27,7 +27,7 @@ mix.js('source/_assets/js/main.js', 'js')
     })
     .purgeCss({
         extensions: ['html', 'md', 'js', 'php', 'vue'],
-        folders: ['source', 'build_*'],
-        whitelistPatterns: [/language/, /hljs/, /algolia/],
+        folders: ['build_*'],
+        whitelistPatterns: [/language/, /hljs/, /algolia/, /ds-dropdown-menu/],
     })
     .version();
