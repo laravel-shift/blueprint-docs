@@ -25,7 +25,7 @@ models:
     id: id
     deleted_at: timestamp
     created_at: timestamp
-    update_at: timestamp
+    updated_at: timestamp
 ```
 
 And again using shorthands:
