@@ -16,6 +16,7 @@ return [
             'Keys and Indexes' => '/docs/keys-and-indexes',
             'Relationships' => '/docs/model-relationships',
             'Shorthands' => '/docs/model-shorthands',
+            'Generating Seeders' => '/docs/generating-database-seeders',
         ],
     ],
     'Defining Controllers' => [
