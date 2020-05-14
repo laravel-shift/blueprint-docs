@@ -7,7 +7,7 @@ section: content
 ## Generating Database Seeders {#defining-models}
 Blueprint also supports defining a `seeders` section within a draft file to generate [database seeders](https://laravel.com/docs/seeding) for a given model.
 
-The syntax for this section is simply `seeders: value`. Where `value` is a comma separate list of [model references](/docs/model-references).
+The syntax for this section is simply `seeders: value`, where `value` is a comma separated list of [model references](/docs/model-references).
 
 For example:
 
@@ -31,12 +31,15 @@ seeders: Post, Comment
 
 From this definition, Blueprint will create two seeders: `PostSeeder` and `CommentSeeder`, respectively.
 
-Note in this example, Blueprint will not create a `UserSeeder` since it was not included in the list of model references.
+Notice Blueprint does not create a `UserSeeder`  in this instance since it was not included in the list of model references.
 
-Blueprint generate code which uses the [model factories](https://laravel.com/docs/database-testing#writing-factories) to seed the database with 5 records.
+The code within the generated seeder uses the [model factories](https://laravel.com/docs/database-testing#writing-factories) to seed the database with 5 records.
 
-For example, using the `Post` definition above, Blueprint would generate the following migration code:
+For example, within the `PostSeeder`, Blueprint would generate the following code:
 
 ```php
-factory(\App\Post::class, 5)->create();
+public function run()
+{
+    factory(\App\Post::class, 5)->create();
+}
 ```
