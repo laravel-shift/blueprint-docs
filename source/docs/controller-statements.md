@@ -152,22 +152,25 @@ $request->session()->put('post-title', $post->title);
 
 
 #### update {#update-statement}
-Generates an Eloquent statement for updating the referenced model. Blueprint will use the values from a preceding `validate` statement to determine the columns to update.
+Generates an Eloquent `update` statement for a model. You may use a value of the model reference to generate a generic `update` statement, or a comma separated list of column names to update.
 
 For example:
 
 ```yaml
 update: post
+update: title, content, author_id
 ```
 
+When used with a resource controller, Blueprint will infer the model reference.
 
 #### validate {#validate-statement}
-Generates a form request with _rules_ based on the referenced model definition. Blueprint accepts a `value` containing a comma separated list of column names.
+Generates a form request with _rules_ based on the referenced model definition. You may use a value of the model reference to validate all columns, or a comma separated list of the column names to validate.
 
 For example:
 
 ```yaml
+validate: post
 validate: title, content, author_id
 ```
 
-Blueprint also updates the type-hint of the injected request object.
+Blueprint also updates the type-hint of the injected request object, as well as any PHPDoc reference.

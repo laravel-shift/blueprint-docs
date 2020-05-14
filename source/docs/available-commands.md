@@ -22,6 +22,11 @@ As such, it's convenient to use the `draft.yaml` file for defining components, b
 
 When complete, `blueprint:build` will output a list of the files it created and updated.
 
+### New Command {#new-command}
+Blueprint includes a `blueprint:new` command. This command may be helpful when you want to start using Blueprint within your project.
+
+The `blueprint:new` command will generate a `draft.yaml` file with stubs for the `models` and `controllers` sections, as well as run the [`trace` command](#trace-command) to preload your existing models into Blueprint's cache.
+
 ### Erase Command {#erase-command}
 Blueprint also comes with a `blueprint:erase` command. Anytime you run `blueprint:build`, the list of generated components is cached in a local `.blueprint` file.
 
