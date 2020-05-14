@@ -39,7 +39,7 @@ controllers:
 
 This draft file defines a model named `Post` and a controller with two actions: `index` and `store`.
 
-While this YAML might seem dense at first, the syntax aligns nicely with the same syntax you'd use within Laravel. For example, all of the column data types are the same you would use when [creating columns](https://laravel.com/docs/7.x/migrations#columns) in a migration.
+While this YAML might seem dense at first, the syntax aligns nicely with the same syntax you'd use within Laravel. For example, all of the column data types are the same you would use when [creating columns](https://laravel.com/docs/migrations#columns) in a migration.
 
 In addition, the _statements_ within each controller actions use familiar terms like `validate`, `save`, and `fire`.
 
@@ -60,6 +60,6 @@ From just these 20 lines of YAML, Blueprint will generate all of the following L
 - A _job_ class for `SyncMedia` complete with a `post` property set through the _constructor_.
 - An _event_ class for `NewPost` complete with a `post` property set through the _constructor_.
 - A _Blade template_ of `post/index.blade.php` rendered by `PostController@index`.
-- An [HTTP Test](https://laravel.com/docs/7.x/http-tests) complete with respective _arrange_, _act_, and _assert_ sections for the `PostController` actions.
+- An [HTTP Test](https://laravel.com/docs/http-tests) complete with respective _arrange_, _act_, and _assert_ sections for the `PostController` actions.
 
 While this draft file only defines a single model and controller, you may define multiple models and controllers.

@@ -91,7 +91,7 @@ When the template does not exist, Blueprint will generate the Blade template for
 
 
 #### resource {#resource-statement}
-Generates response statement for the [Resource](https://laravel.com/docs/7.x/eloquent-resources) to the referenced model. You may prefix the plural model reference with `collection` or `paginate` to return a resource collection or paginated collection, respectively.
+Generates response statement for the [Resource](https://laravel.com/docs/eloquent-resources) to the referenced model. You may prefix the plural model reference with `collection` or `paginate` to return a resource collection or paginated collection, respectively.
 
 If the resource for the referenced model does not exist, Blueprint will create one using the model definition.
 
@@ -136,7 +136,7 @@ If the referenced _mailable_ class does not exist, Blueprint will create one usi
 
 
 #### store {#store-statement}
-Generates a statement to [store data](https://laravel.com/docs/7.x/session#storing-data) to the session. Blueprint will slugify the `value` as the session key and expands the reference as the session value.
+Generates a statement to [store data](https://laravel.com/docs/session#storing-data) to the session. Blueprint will slugify the `value` as the session key and expands the reference as the session value.
 
 For example:
 

@@ -11,7 +11,7 @@ Blueprint's primary focus will always be models and controllers. However, Bluepr
 
 For example, generating HTML for CRUD views, or components for [Laravel Nova](https://nova.laravel.com/).
 
-Blueprint is [bound to the container](https://laravel.com/docs/7.x/container#binding) as a _singleton_. This means you can resolve an instance of the `Blueprint` object either from within your own application or another Laravel package.
+Blueprint is [bound to the container](https://laravel.com/docs/container#binding) as a _singleton_. This means you can resolve an instance of the `Blueprint` object either from within your own application or another Laravel package.
 
 All of the parsing and code generation is managed by this `Blueprint`. As such, you may register your own _lexer_ or _generator_ to generate additional code when `blueprint:build` is run.
 

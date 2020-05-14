@@ -7,7 +7,7 @@ section: content
 ## Controller Shorthands {#controller-shorthands}
 In addition to some of the statement shorthands and model reference conveniences, Blueprint also offers a resource shorthand.
 
-This aligns with Laravel‘s preference for creating [resource controllers](https://laravel.com/docs/7.x/controllers#resource-controllers).
+This aligns with Laravel‘s preference for creating [resource controllers](https://laravel.com/docs/controllers#resource-controllers).
 
 Instead of having to write out all of the actions and statements common to CRUD behavior within your controllers, you may instead use the `resource` shorthand.
 
