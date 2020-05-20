@@ -23,9 +23,9 @@ To illustrate using these shorthands, here is the _longhand_ definition of a mod
 models:
   Widget:
     id: id
-    delete_at: timestamp
+    deleted_at: timestamp
     created_at: timestamp
-    update_at: timestamp
+    updated_at: timestamp
 ```
 
 And again using shorthands:
