@@ -11,7 +11,7 @@ Blueprint provides an implicit model shorthand by automatically generating the `
 
 Of course, you are able to define these yourself at anytime. For example, if you want to use a different column type for the _id_ column, like `uuid`.
 
-You may also disable them by marking them as `false`. For example, to disable the _timestamp_ columns, you may add `timestamps: false` to your model definition. If you wish to generate the _timestamp_ columns with timezone column types, you may use the `timezonesTz` shorthand.
+You may also disable them by marking them as `false`. For example, to disable the _timestamp_ columns, you may add `timestamps: false` to your model definition. If you wish to generate the _timestamp_ columns with timezone column types, you may use the `timestampsTz` shorthand.
 
 Blueprint also offers a `softDeletes` shorthand. Adding this to your model definition will generate the appropriate `deleted_at` column, as well add the `SoftDeletes` trait to your model. Similarly, if you want timezone information, you may use the `softDeletesTz` shorthand.
 
