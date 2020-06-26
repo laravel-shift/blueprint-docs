@@ -9,7 +9,7 @@ Blueprint comes with an expressive set of statements which define code within ea
 
 Each statement is a `key: value` pair.
 
-The `key` defines the _type_ of statement to generate. Currently, Blueprint supports the following types of statements: `delete`, `dispatch`, `find`, `fire`, `flash`, `query`, `redirect`, `render`, `resource`, `respond`, `save`, `send`, `store`, `update`, `validate`.
+The `key` defines the _type_ of statement to generate. Currently, Blueprint supports the following types of statements: `delete`, `dispatch`, `find`, `fire`, `flash`, `notify`, `query`, `redirect`, `render`, `resource`, `respond`, `save`, `send`, `store`, `update`, `validate`.
 
 
 #### delete {#delete-statement}
@@ -53,6 +53,25 @@ For example:
 
 ```yaml
 flash: post.title
+```
+
+#### notify {#notify-statement}
+Generates a statement to send a [Notification](https://laravel.com/docs/notifications) using the `value` to instantiate the object, specify the recipient, and pass any data.
+
+For example:
+
+```yaml
+notify: post.author ReviewPost with:post
+```
+
+If the referenced _notification_ class does not exist, Blueprint will create one using any data to define properties and a `__construct` method which assigns them.
+
+You may also send a notification using the [`Notifiable` trait](https://laravel.com/docs/notifications#using-the-notifiable-trait) by passing a model reference.
+
+For example:
+
+```yaml
+notify: user AccountAlert
 ```
 
 
@@ -129,7 +148,7 @@ Generates a statement to send a [Mailable](https://laravel.com/docs/mail#generat
 For example:
 
 ```yaml
-send: ReviewNotification to:post.author with:post
+send: ReviewPost to:post.author with:post
 ```
 
 If the referenced _mailable_ class does not exist, Blueprint will create one using any data to define properties and a `__construct` method which assigns them.
