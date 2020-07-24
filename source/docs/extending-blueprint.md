@@ -19,6 +19,13 @@ By registering a lexer, Blueprint will pass an array of the parsed tokens from t
 
 Each registered generator is then called with tree and responsible for generating code. By default, this contains the parsed `models` and `controllers`. However, it may also contain additional items you may have placed in the tree with a lexer.
 
-The [blueprint-nova-addon](https://github.com/Naoray/blueprint-nova-addon) is a very simple extension to Blueprint for generating Laravel Nova components. You may use this as an example of extending Blueprint to reference in your own projects or share with the Laravel community.
-
 In addition, I also discuss the architecture for extending Blueprint as well as adding new syntax for [database seeders](/docs/generating-database-seeders) during this [weekly Blueprint live-stream](https://www.youtube.com/watch?v=ZxpmSAXKG1A&t=1656).
+
+### Community Addons
+You may use these addons in your projects or as an example of how to create your own and possibly share them with the Laravel community.
+
+- [API Resources Tests](https://github.com/axitbv/laravel-blueprint-streamlined-test-addon): Swaps Blueprint's TestGenerator with a [*too fancy* and *too specific*, *streamlined* tests](https://github.com/laravel-shift/blueprint/pull/220) generator for API Resource Controllers.
+
+- [Laravel Nova](https://github.com/Naoray/blueprint-nova-addon): Installing this addon will will generate Nova resources for each of the models specified in your `draft.yml`.
+
+- [Pest Test Generator](https://github.com/fidum/laravel-blueprint-pestphp-addon): Replaces the standard PHPUnit TestGenerator with a [Pest](https://github.com/pestphp/pest) test generator that outputs elegent and fluent test cases for your controllers.
