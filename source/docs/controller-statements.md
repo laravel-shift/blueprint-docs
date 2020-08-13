@@ -143,7 +143,7 @@ For example, for a `store` controller action, Blueprint will generate a `Model::
 
 
 #### send {#send-statement}
-Generates a statement to send a [Mailable](https://laravel.com/docs/mail#generating-mailables) using the `value` to instantiate the object, specify the recipient, and pass any data.
+Generates a statement to send a [Mailable](https://laravel.com/docs/mail#generating-mailables) or [Notification](https://laravel.com/docs/7.x/notifications) using the `value` to instantiate the object, specify the recipient, and pass any data.
 
 For example:
 
