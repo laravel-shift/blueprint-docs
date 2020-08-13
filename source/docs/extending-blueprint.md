@@ -24,8 +24,7 @@ In addition, I also discuss the architecture for extending Blueprint as well as 
 ### Community Addons
 You may use these addons in your projects or as an example of how to create your own and possibly share them with the Laravel community.
 
-- [API Resources Tests](https://github.com/axitbv/laravel-blueprint-streamlined-test-addon): Swaps Blueprint's TestGenerator with a [*too fancy* and *too specific*, *streamlined* tests](https://github.com/laravel-shift/blueprint/pull/220) generator for API Resource Controllers.
 
-- [Laravel Nova](https://github.com/Naoray/blueprint-nova-addon): Installing this addon will will generate Nova resources for each of the models specified in your `draft.yml`.
-
-- [Pest Test Generator](https://github.com/fidum/laravel-blueprint-pestphp-addon): Replaces the standard PHPUnit TestGenerator with a [Pest](https://github.com/pestphp/pest) test generator that outputs elegent and fluent test cases for your controllers.
+- [Laravel Nova](https://github.com/Naoray/blueprint-nova-addon): Automatically generate Nova resources for each of the models specified in your _draft file_.
+- [Pest Test Generator](https://github.com/fidum/laravel-blueprint-pestphp-addon): Generate [Pest](https://github.com/pestphp/pest) tests, instead of the standard Laravel/PHPUnit tests.
+- [API Resources Tests](https://github.com/axitbv/laravel-blueprint-streamlined-test-addon): Generate test code similar to Blueprint, but using an [opinionated and streamlined](https://github.com/laravel-shift/blueprint/pull/220) style.
