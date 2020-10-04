@@ -71,7 +71,7 @@ resource: index, api.destroy
 
 While you may use this shorthand to generate these controller actions quickly, and update the code after, you may also combine the `resource` shorthand with any additional actions or even override the defaults.
 
-The following example demonstrates the definition for controller which will generate the all 7 resource actions, plus a `download` action, and will use the defined statements for the `create` action instead of the shorthand defaults.
+The following example demonstrates the definition for controller which will generate the all 7 resource actions, plus a `download` action, and will use the defined statements for the `show` action instead of the shorthand defaults.
 
 ```yaml
 controllers:
