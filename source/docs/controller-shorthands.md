@@ -50,9 +50,9 @@ controllers:
     resource
 ```
 
-Of course, Blueprint doesn’t stop there. You may also specify a value of `all`, `web`, or `api`.
+By default, the `resource` shorthand generates the 7 _web_ resource actions. Of course, you are welcome to set this explicitly as `resource: web`.
 
-A value of `api` would generate the 5 resource actions of an API controller with the appropriate statements and responses for each action: `index`, `store`, `show`, `update`, and `destroy`.
+Blueprint doesn’t stop there. You may also specify a value of `api`. A value of `api` would generate the 5 resource actions of an API controller with the appropriate statements and responses for each action: `index`, `store`, `show`, `update`, and `destroy`.
 
 You may also specify the exact controller actions you wish to generate by specifying any of the 7 resource actions as a comma separated list. If you wish to use the API actions, prefix the action with `api.`.
 
