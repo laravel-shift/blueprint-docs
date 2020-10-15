@@ -10,10 +10,12 @@
         <meta property="og:title" content="{{ $page->siteName }}{{ $page->title ? ' | ' . $page->title  : '' }}"/>
         <meta property="og:description" content="{{ $page->description ?? $page->siteDescription }}"/>
         <meta property="og:url" content="{{ $page->getUrl() }}"/>
-        <meta property="og:image" content="/assets/img/logo.png"/>
+        <meta property="og:image" content="https://blueprint.laravelshift.com/assets/img/laravel-blueprint-code-generator.png"/>
         <meta property="og:type" content="website"/>
+
         <meta name="twitter:image:alt" content="{{ $page->siteName }}">
         <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="https://blueprint.laravelshift.com/assets/img/laravel-blueprint-code-generator.png" />
 
         @if ($page->docsearchApiKey && $page->docsearchIndexName)
             <meta name="generator" content="tighten_jigsaw_doc">
