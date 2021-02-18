@@ -103,7 +103,7 @@ Generates a `return view();` statement for the referenced template with any addi
 For example:
 
 ```yaml
-view: post.show with:post,foo,bar
+render: post.show with:post,foo,bar
 ```
 
 When the template does not exist, Blueprint will generate the Blade template for the view.
