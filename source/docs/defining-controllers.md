@@ -33,7 +33,7 @@ While you may specify the full name of a controller, Blueprint will automaticall
 
 Blueprint will generate the methods for each controller actions. In addition, Blueprint will register routes for each action. The HTTP method will be inferred based on the action name. For example, Blueprint will register a `post` route for the `store` action. Otherwise, a `get` route will be registered.
 
-For these reasons, Blueprint recommends defining [resource controllers](/docs/controller-shorthands). Doing so allows Blueprint to infer details and generate even more code automatically.
+For these reasons, Blueprint recommends defining [resource controllers](/docs/controller-shorthands#resource-shorthand). Doing so allows Blueprint to infer details and generate even more code automatically.
 
 If you wish to namespace a controller, you may prefix the controller name. Blueprint will use this prefix as the namespace and properly save the generated controller class following Laravel conventions. For example, defining an `Api\Post` controller will generate a `App\Http\Controllers\Api\PostController` class saved as `app/Http/Controllers/Api/PostController.php`.
 

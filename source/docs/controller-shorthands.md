@@ -5,8 +5,10 @@ extends: _layouts.documentation
 section: content
 ---
 ## Controller Shorthands {#controller-shorthands}
-In addition to some of the statement shorthands and model reference conveniences, Blueprint also offers a resource shorthand.
+In addition to some of the statement shorthands and model reference conveniences, Blueprint also offers shorthands for 
+generating [resource](#resource-shorthand) and [invokable](#invokable-shorthand) controllers.
 
+### Resource Shorthand {#resource-shorthand}
 This aligns with Laravel‘s preference for creating [resource controllers](https://laravel.com/docs/controllers#resource-controllers).
 
 Instead of having to write out all of the actions and statements common to CRUD behavior within your controllers, you may instead use the `resource` shorthand.
@@ -84,3 +86,43 @@ controllers:
       query: comments where:post.id
       render: post.show with:post,comments
 ```
+
+### Invokable Shorthand {#invokable-shorthand}
+You can also use Blueprint to generate [single action controllers](https://laravel.com/docs/controllers#single-action-controllers),
+using the `invokable` shorthand:
+
+```yaml
+controllers:
+  Report:
+    invokable
+```
+
+The above draft is equivalent to explicitly defining a method returning a view (the shorthand infers the view name from the 
+controller name):
+
+```yaml
+controllers:
+  Report:
+    __invoke:
+      render: report
+```
+
+You can also use any of the [controller statements](/docs/controller-statements) as usual, and use the `invokable`
+keyword if you don't like underscores in your drafts:
+```yaml
+controllers:
+  Report:
+    invokable:
+      fire: ReportGenerated
+      render: report
+```
+
+All of the above drafts would generate routes proper for an invokable controller, based on the value of `generate_fqcn_route`
+in your [configuration](/docs/advanced-configuration).
+```php
+Route::get('/report', 'ReportController');
+
+// or using class-based routes
+Route::get('/report', App\Http\Controllers\ReportController::class);
+```
+
