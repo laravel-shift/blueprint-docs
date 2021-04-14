@@ -121,8 +121,6 @@ resource: user
 resource: paginate:users
 ```
 
-When the template does not exist, Blueprint will generate the Blade template for the view.
-
 
 #### respond {#respond-statement}
 Generates a response which returns the given value. If the value is an integer, Blueprint will generate the proper `response()` statement using the value as the status code. Otherwise, the value will be used as the name of the variable to return.
