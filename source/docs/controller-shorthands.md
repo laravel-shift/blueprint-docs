@@ -11,7 +11,7 @@ This aligns with Laravel‘s preference for creating [resource controllers](http
 
 Instead of having to write out all of the actions and statements common to CRUD behavior within your controllers, you may instead use the `resource` shorthand.
 
-The `resource` shorthand automatically infers the model reference based on the controller name. Blueprint will expand this to into the 7 resource actions with the appropriate statements for each action: `index`, `create`, `store`, `show`, `edit`, `update`, and `destroy`.
+The `resource` shorthand automatically infers the model reference based on the controller name. Blueprint will expand this into the 7 resource actions with the appropriate statements for each action: `index`, `create`, `store`, `show`, `edit`, `update`, and `destroy`.
 
 For example, the following represents the _longhand_ definition of resource controller:
 
