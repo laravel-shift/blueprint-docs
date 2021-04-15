@@ -96,8 +96,7 @@ controllers:
     invokable
 ```
 
-The above draft is equivalent to explicitly defining a method returning a view (the shorthand infers the view name from the 
-controller name):
+The above draft is equivalent to explicitly defining an `__invoke` action which renders a view with the same name as the controller:
 
 ```yaml
 controllers:
@@ -106,8 +105,8 @@ controllers:
       render: report
 ```
 
-You can also use any of the [controller statements](/docs/controller-statements) as usual, and use the `invokable`
-keyword if you don't like underscores in your drafts:
+For convenience, you may also define an `invokable` action instead of having to remember the underlying `__invoke` syntax:
+
 ```yaml
 controllers:
   Report:
@@ -116,12 +115,13 @@ controllers:
       render: report
 ```
 
-All of the above drafts would generate routes proper for an invokable controller, based on the value of `generate_fqcn_route`
+All of the above draft files would generate routes for an invokable controller, based on the value of `generate_fqcn_route`
 in your [configuration](/docs/advanced-configuration).
+
 ```php
 Route::get('/report', 'ReportController');
 
-// or using class-based routes
+// generate_fqcn_route = true
 Route::get('/report', App\Http\Controllers\ReportController::class);
 ```
 
