@@ -87,7 +87,7 @@ controllers:
 ```
 
 ### Invokable Shorthand {#invokable-shorthand}
-You can also use Blueprint to generate [single action controllers](https://laravel.com/docs/controllers#single-action-controllers),
+You may also use Blueprint to generate [single action controllers](https://laravel.com/docs/controllers#single-action-controllers),
 using the `invokable` shorthand:
 
 ```yaml
