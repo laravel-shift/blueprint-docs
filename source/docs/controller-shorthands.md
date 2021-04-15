@@ -5,13 +5,14 @@ extends: _layouts.documentation
 section: content
 ---
 ## Controller Shorthands {#controller-shorthands}
-In addition to some of the statement shorthands and model reference conveniences, Blueprint also offers a resource shorthand.
+In addition to some of the statement shorthands and model reference conveniences, Blueprint also offers shorthands for generating [resource](#resource-shorthand) and [invokable](#invokable-shorthand) controllers.
 
+### Resource Shorthand {#resource-shorthand}
 This aligns with Laravel‘s preference for creating [resource controllers](https://laravel.com/docs/controllers#resource-controllers).
 
 Instead of having to write out all of the actions and statements common to CRUD behavior within your controllers, you may instead use the `resource` shorthand.
 
-The `resource` shorthand automatically infers the model reference based on the controller name. Blueprint will expand this to into the 7 resource actions with the appropriate statements for each action: `index`, `create`, `store`, `show`, `edit`, `update`, and `destroy`.
+The `resource` shorthand automatically infers the model reference based on the controller name. Blueprint will expand this into the 7 resource actions with the appropriate statements for each action: `index`, `create`, `store`, `show`, `edit`, `update`, and `destroy`.
 
 For example, the following represents the _longhand_ definition of resource controller:
 
@@ -84,3 +85,43 @@ controllers:
       query: comments where:post.id
       render: post.show with:post,comments
 ```
+
+### Invokable Shorthand {#invokable-shorthand}
+You may also use Blueprint to generate [single action controllers](https://laravel.com/docs/controllers#single-action-controllers),
+using the `invokable` shorthand:
+
+```yaml
+controllers:
+  Report:
+    invokable
+```
+
+The above draft is equivalent to explicitly defining an `__invoke` action which renders a view with the same name as the controller:
+
+```yaml
+controllers:
+  Report:
+    __invoke:
+      render: report
+```
+
+For convenience, you may also define an `invokable` action instead of having to remember the underlying `__invoke` syntax:
+
+```yaml
+controllers:
+  Report:
+    invokable:
+      fire: ReportGenerated
+      render: report
+```
+
+All of the above draft files would generate routes for an invokable controller, based on the value of `generate_fqcn_route`
+in your [configuration](/docs/advanced-configuration).
+
+```php
+Route::get('/report', 'ReportController');
+
+// generate_fqcn_route = true
+Route::get('/report', App\Http\Controllers\ReportController::class);
+```
+
