@@ -5,8 +5,7 @@ extends: _layouts.documentation
 section: content
 ---
 ## Controller Shorthands {#controller-shorthands}
-In addition to some of the statement shorthands and model reference conveniences, Blueprint also offers shorthands for 
-generating [resource](#resource-shorthand) and [invokable](#invokable-shorthand) controllers.
+In addition to some of the statement shorthands and model reference conveniences, Blueprint also offers shorthands for generating [resource](#resource-shorthand) and [invokable](#invokable-shorthand) controllers.
 
 ### Resource Shorthand {#resource-shorthand}
 This aligns with Laravel‘s preference for creating [resource controllers](https://laravel.com/docs/controllers#resource-controllers).
