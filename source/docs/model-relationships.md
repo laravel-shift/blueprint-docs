@@ -21,11 +21,14 @@ models:
     relationships:
       hasMany: Comment
       belongsToMany: Media, Site
+      belongsTo: \Spatie\LaravelPermission\Models\Role
 ```
 
 While you may specify the `relationships` anywhere within the model section, Blueprint recommends doing so at the bottom.
 
 For each of these relationships, Blueprint will add the respective [Eloquent relationship](https://laravel.com/docs/eloquent-relationships) method within the generated model class. In addition, Blueprint will automatically generate the "pivot table" migration for any `belongsToMany` relationship.
+
+To specify a model which is not part of your application, you may provide the fully qualified class name. Be sure to include the initial `\` (backslash). For example, `\Spatie\LaravelPermission\Models\Role`.
 
 ^^^
 When defining relationships or [foreign keys](/docs/keys-and-indexes) it's important to remember the referenced tables must exist. While Blueprint makes an effort to generate migrations for "pivot tables" last, it is still possible encounter these errors. If so, you may define your models without these relationships or constraints and add them manually later.
