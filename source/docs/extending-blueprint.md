@@ -29,3 +29,8 @@ You may use these addons in your projects or as an example of how to create your
 - [Pest Test Generator](https://github.com/fidum/laravel-blueprint-pestphp-addon): Generate [Pest](https://github.com/pestphp/pest) tests, instead of the standard Laravel/PHPUnit tests.
 - [API Resources Tests](https://github.com/axitbv/laravel-blueprint-streamlined-test-addon): Generate test code similar to Blueprint, but using an [opinionated and streamlined](https://github.com/laravel-shift/blueprint/pull/220) style.
 - [TALL-forms](https://github.com/tanthammar/tall-blueprint-addon): Automatically generate _TALL_ forms for each of the models specified in your draft file.
+
+### Additional Services
+The following services also support using _Blueprint_ by either accepting or generating a draft file.
+
+- [drawSQL](https://drawsql.app/): Generate _draft file_ from your database entity relationship diagrams.
