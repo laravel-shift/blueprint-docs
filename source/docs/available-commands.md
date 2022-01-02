@@ -28,8 +28,8 @@ Blueprint includes a `blueprint:new` command. This command may be helpful when y
 The `blueprint:new` command will generate a `draft.yaml` file with stubs for the `models` and `controllers` sections, as well as run the [`trace` command](#trace-command) to preload your existing models into Blueprint's cache.
 
 ^^^
-This command has optional flags `--config or -C` and `--stubs or -S`. Using these flags are a shortcut to publishing the config file and stub files.
-e.g. `php artisan blueprint:new -CS`
+This command has optional flags `--config or -c` and `--stubs or -s`. Using these flags are a shortcut to publishing the config file and stub files.
+e.g. `php artisan blueprint:new -cs`
 ^^^
 
 ### Erase Command {#erase-command}
