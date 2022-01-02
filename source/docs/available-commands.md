@@ -27,6 +27,11 @@ Blueprint includes a `blueprint:new` command. This command may be helpful when y
 
 The `blueprint:new` command will generate a `draft.yaml` file with stubs for the `models` and `controllers` sections, as well as run the [`trace` command](#trace-command) to preload your existing models into Blueprint's cache.
 
+^^^
+This command has optional flags `--config or -C` and `--stubs or -S`. Using these flags are a shortcut to publishing the config file and stub files.
+e.g. `php artisan blueprint:new -CS`
+^^^
+
 ### Erase Command {#erase-command}
 Blueprint also comes with a `blueprint:erase` command. Anytime you run `blueprint:build`, the list of generated components is cached in a local `.blueprint` file.
 
@@ -37,6 +42,11 @@ If you realize a mistake after running `blueprint:build` and would like to _rebu
 ^^^
 While the `blueprint:erase` command is offered for convenience, its capabilities are limited. Instead, Blueprint  recommends running `blueprint:build` from a _clean working state_. This way, you can use version control commands to _undo_ the changes with finer control.
 ^^^
+
+### Publish Stubs Command {#stubs-command}
+Like Laravel, the Blueprint package allows you to publish and modify the stubs. Blueprint will attempt to check for custom stubs, before falling back to the default stubs.
+
+To publish the stubs for customizing, you can use the `blueprint:stubs` command.
 
 ### Trace Command {#trace-command}
 When using Blueprint with existing applications, you may need to reference existing models when generating new components. Furthermore, even though Blueprint caches the generated model definitions in a `.blueprint` file, this file may become outdated as you continue to develop your application.

@@ -7,7 +7,13 @@ section: content
 ## Blueprint Configuration {#blueprint-configuration}
 Blueprint aims to provide sensible defaults which align nicely with Laravel's conventions. However, you are free to configure Blueprint to follow your own custom conventions.
 
-To do so, you may publish the configuration file with the following command:
+To do so, you may add a simple flag when running the `blueprint:new` command, like so:
+
+```sh
+php artisan blueprint:new --config
+```
+
+Alternatively, you can publish the configuration file with the following standalone command:
 
 ```sh
 php artisan vendor:publish --tag=blueprint-config
