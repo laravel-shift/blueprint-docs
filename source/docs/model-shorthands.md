@@ -5,7 +5,7 @@ extends: _layouts.documentation
 section: content
 ---
 ## Model Shorthands {#model-shorthands}
-Blueprint provides several _shorthands_ when defining models. While using these may at time appear as invalid YAML, they are provided for developer convenience. Blueprint will properly expand these shorthands into valid YAML before parsing the draft file.
+Blueprint provides several _shorthands_ when defining models.
 
 Blueprint provides an implicit model shorthand by automatically generating the `id` and _timestamp_ (`created_at`, and `updated_at`) columns on every model. You never need to specify these columns when defining models.
 
@@ -33,9 +33,9 @@ And again using shorthands:
 ```yaml
 models:
   Widget:
-    id
-    softDeletes
-    timestamps
+    id: id
+    softDeletes: true
+    timestamps: true
 ```
 
 And finally, leveraging the full power of Blueprint by also using implicit model shorthands:
@@ -43,5 +43,5 @@ And finally, leveraging the full power of Blueprint by also using implicit model
 ```yaml
 models:
   Widget:
-    softDeletes
+    softDeletes: true
 ```
