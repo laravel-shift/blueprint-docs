@@ -38,7 +38,7 @@ The code within the generated seeder uses the [model factories](https://laravel.
 For example, within the `PostSeeder`, Blueprint would generate the following code:
 
 ```php
-public function run()
+public function run(): void
 {
     factory(\App\Post::class, 5)->create();
 }

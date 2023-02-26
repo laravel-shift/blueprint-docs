@@ -42,11 +42,7 @@ Review the [advanced configuration](/docs/advanced-configuration) to customize t
 Finally, Blueprint will analyze each of the statements listed within the action to generate the body of each controller method. For example, the above definition for the `index` action would generate the following controller method:
 
 ```php
-/**
- * @param \Illuminate\Http\Request $request
- * @return \Illuminate\Http\Response
- */
-public function index(Request $request)
+public function index(Request $request): View
 {
     $posts = Post::all();
 

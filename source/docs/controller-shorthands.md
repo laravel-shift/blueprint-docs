@@ -115,13 +115,8 @@ controllers:
       render: report
 ```
 
-All of the above draft files would generate routes for an invokable controller, based on the value of `generate_fqcn_route`
-in your [configuration](/docs/advanced-configuration).
+All of the above draft files would generate the following route for an invokable controller:
 
 ```php
-Route::get('/report', 'ReportController');
-
-// generate_fqcn_route = true
 Route::get('/report', App\Http\Controllers\ReportController::class);
 ```
-
