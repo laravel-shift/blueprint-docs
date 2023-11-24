@@ -9,7 +9,7 @@ Blueprint supports all of the [available column types](https://laravel.com/docs/
 
 Some of these column types support additional attributes. For example, the `string` column type accepts a length, `decimal` accepts a _precision_ and _scale_, and an `enum` may accept a list of values.
 
-Within Blueprint, you may define these attributes by appending the column type with a colon (':') followed by the attribute value. For example:
+Within Blueprint, you may define these attributes by appending the column type with a colon (`:`) followed by the attribute value. For example:
 
 ```yaml
 payment_token: string:40
@@ -17,7 +17,7 @@ total: decimal:8,2
 status: enum:pending,successful,failed
 ```
 
-You may also specify _modifiers_ for each column. Blueprint supports most of the [column modifiers](https://laravel.com/docs/migrations#column-modifiers) available in Laravel, including: `autoIncrement`, `charset`, `collation`, `default`, `foreign`, `index`, `nullable`, `primary`, `unsigned`, `unique`, and `useCurrent`.
+You may also specify _modifiers_ for each column. Blueprint supports most of the [column modifiers](https://laravel.com/docs/migrations#column-modifiers) available in Laravel, including: `autoIncrement`, `always`, `charset`, `collation`, `comment`, `default`, `foreign`, `index`, `nullable`, `onDelete`, `onUpdate`, `primary`, `unsigned`, `unique`, `useCurrent`, and `useCurrentOnUpdate`.
 
 ^^^
 To give you full control, Blueprint uses the literal value you define for the `default` modifier. For example, defining an _integer_ with `default:1`, versus a _string_ with `default:'1'`.
