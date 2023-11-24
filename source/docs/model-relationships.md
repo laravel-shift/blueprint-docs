@@ -7,7 +7,7 @@ section: content
 ## Model Relationships {#model-relationships}
 Blueprint also allows you to define many of the relationships available within Laravel, including: `belongsTo`, `hasOne`, `hasMany`, and `belongsToMany`.
 
-In fact, the `belongsTo` relationship is automatically generated for any column defined with the `id` column type.
+In fact, the `belongsTo` relationship is automatically generated for any column defined with the `id` column type or `foreign` attribute. While you may define the `belongsTo` relationship explicitly, it is not necessary. Simply defining the foreign key column or the `belongsTo` relationship is enough for Blueprint to automatically generate the correct columns and code.
 
 To define one of the additional relationships, you may add a `relationships` section to your model definition. Within this section, you specify the relationship type followed by a comma separated list of model names.
 
