@@ -10,7 +10,7 @@ You may install Blueprint via Composer. It's recommended to install Blueprint as
 When ready, run the following command to install Blueprint:
 
 ```sh
-composer require --dev laravel-shift/blueprint
+composer require -W --dev laravel-shift/blueprint
 ```
 
 ### Additional Packages {#additional-packages}
