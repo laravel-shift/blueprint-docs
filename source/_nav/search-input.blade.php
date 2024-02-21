@@ -17,6 +17,7 @@
             docsearch({
                 apiKey: '{{ $page->docsearchApiKey }}',
                 indexName: '{{ $page->docsearchIndexName }}',
+                appId: '{{ $page->docsearchAppId }}',
                 inputSelector: '#docsearch-input',
                 debug: false // Set debug to true if you want to inspect the dropdown
             });

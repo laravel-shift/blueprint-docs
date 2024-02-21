@@ -5,6 +5,7 @@ return [
     'production' => true,
 
     // DocSearch credentials
-    'docsearchApiKey' => 'bd95c1f025e3c8d684183d99e714e567',
+    'docsearchApiKey' => 'e7636fa4e7966c21a67c7cc2e10de70c',
+    'docsearchAppId' => 'AV69P8LQ8H',
     'docsearchIndexName' => 'laravelshift_blueprint',
 ];
