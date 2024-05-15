@@ -25,6 +25,13 @@ For example, all of the following column definitions generate a foreign referenc
     uid: id foreign:users.id
 ```
 
+For example, this will add a unique on the `owner_id` and the `badge_number` column of the `users` table.
+
+```yaml
+    indexes:
+      - unique: owner_id, badge_number
+```
+
 Finally, while the `id` column type does not create an explicit index on the database, it does imply a foreign key relationships for the model.
 
 Similar to the `foreign` column modifier, you may specify an attribute on the `id` column type. In this case, you specify the foreign model name or the model and column name using dot notation.
