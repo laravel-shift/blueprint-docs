@@ -25,13 +25,6 @@ For example, all of the following column definitions generate a foreign referenc
     uid: id foreign:users.id
 ```
 
-For example, this will add a unique on the `owner_id` and the `badge_number` column of the `users` table.
-
-```yaml
-    indexes:
-      - unique: owner_id, badge_number
-```
-
 Finally, while the `id` column type does not create an explicit index on the database, it does imply a foreign key relationships for the model.
 
 Similar to the `foreign` column modifier, you may specify an attribute on the `id` column type. In this case, you specify the foreign model name or the model and column name using dot notation.
@@ -39,3 +32,14 @@ Similar to the `foreign` column modifier, you may specify an attribute on the `i
 ^^^
 Blueprint will always create model relationships for `id` and `uuid` columns. So it is only necessary to specify `foreign` when you want to generate constraints. If you always want to generate foreign key constraints, you should enable at the `use_constraints` [configuration option](/docs/advanced-configuration).
 ^^^
+
+
+### Composite Indexes {#composite-indexes}
+A composite index gives the possibility to add an index over 2 or more columns. This can be achieved by adding an `indexes` key to your model, with a list of `unique` each having an array of column names.
+
+For example, this will add a unique on the `owner_id` and the `badge_number` column of the `users` table.
+
+```yaml
+    indexes:
+      - unique: owner_id, badge_number
+```
