@@ -35,11 +35,12 @@ Blueprint will always create model relationships for `id` and `uuid` columns. So
 
 
 ### Composite Indexes {#composite-indexes}
-A composite index gives the possibility to add an index over 2 or more columns. This can be achieved by adding an `indexes` key to your model, with a list of `unique` each having an array of column names.
+Blueprint also supports adding a composite index. You may do so adding the `indexes` key to your model definition. This key accepts an array of key/value pairs, where the key is the type of index and the value is a comma separated list of column names. 
 
-For example, this will add a unique on the `owner_id` and the `badge_number` column of the `users` table.
+For example, this will add a unique composite index on the `owner_id` and the `badge_number` column of the `users` table.
 
 ```yaml
+  User:
     indexes:
       - unique: owner_id, badge_number
 ```
