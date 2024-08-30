@@ -15,4 +15,4 @@ Submitted PRs should:
 
 You may also contribute by [opening an issue](https://github.com/laravel-shift/blueprint/issues) to report a bug or suggest a new feature. Or submit a Pull Request to improve the [Blueprint Documentation](https://github.com/laravel-shift/blueprint-docs).
 
-If you are so inclined, you may also say "thanks" or proclaim your love of Blueprint [on Twitter](https://twitter.com/gonedark).
+If you are so inclined, you may also say "thanks" or proclaim your love of Blueprint [on X](https://www.x.com).
