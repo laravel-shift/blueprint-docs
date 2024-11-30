@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="A code generation tool for Laravel developers to rapidly generate multiple Laravel components from a single, human readable file.">
+
+        <meta property="og:site_name" content="Blueprint"/>
+        <meta property="og:title" content="Blueprint"/>
+        <meta property="og:description" content="A code generation tool for Laravel developers to rapidly generate multiple Laravel components from a single, human readable file."/>
+        <meta property="og:url" content="https://blueprint.laravel-shift.com/404"/>
+        <meta property="og:image" content="https://blueprint.laravelshift.com/assets/img/laravel-blueprint-code-generator.png"/>
+        <meta property="og:type" content="website"/>
+
+        <meta name="twitter:image:alt" content="Blueprint">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="https://blueprint.laravelshift.com/assets/img/laravel-blueprint-code-generator.png" />
+
+                    <meta name="generator" content="tighten_jigsaw_doc">
+        
+        <title>Blueprint</title>
+
+        <link rel="home" href="https://blueprint.laravel-shift.com">
+        <link rel="icon" href="/favicon.ico">
+
+        
+                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71657594-3"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-71657594-3');
+        </script>
+        
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=c9a704bdcd216b0166ed">
+
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+            </head>
+
+    <body class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-800 leading-normal font-sans">
+
+        <header class="flex bg-white border-b shadow border-gray-200 fixed top-0 inset-x-0 z-100 h-24 items-center">
+          <div class="w-full max-w-screen-xl relative mx-auto px-6">
+            <div class="flex items-center -mx-6">
+              <div class="lg:w-1/4 xl:w-1/5 pl-6 pr-6 lg:pr-8">
+                <div class="flex items-center">
+                    <a href="/" title="Blueprint home" class="inline-flex items-center">
+                        <img class="h-8 md:h-10 mr-3" src="/assets/img/logo.svg" alt="Blueprint logo" />
+
+                        <h1 class="text-lg md:text-2xl text-blue-900 font-semibold hover:text-blue-600 my-0 pr-4">Blueprint</h1>
+                    </a>
+                </div>
+              </div>
+
+              <div class="flex flex-grow lg:w-3/4 xl:w-4/5">
+                <div class="w-full lg:px-6 xl:w-3/4 xl:px-12">
+                                            <div id="js-search-input" class="docsearch-input__wrapper hidden md:block relative">
+    <label for="search" class="hidden">Search</label>
+    <input id="docsearch-input" name="docsearch" class="docsearch-input transition-colors duration-100 ease-in-out focus:outline-0 border border-transparent focus:bg-white focus:border-gray-300 placeholder-gray-600 rounded-lg bg-gray-200 py-2 pr-4 pl-6 block w-full appearance-none leading-normal" type="text" placeholder="search the docs (press &quot;/&quot; to focus)">
+
+    <button class="md:hidden absolute pin-t pin-r h-full font-light text-3xl text-blue-500 hover:text-blue-600 focus:outline-none -mt-px pr-7">&times;</button>
+</div>
+
+                                    </div>
+
+                <div class="hidden lg:flex lg:items-center lg:justify-end xl:w-1/4 px-6">
+                  <div class="flex justify-start items-center">
+                    <a class="block flex items-center text-gray-500 hover:text-black mr-5" href="https://github.com/laravel-shift/blueprint" title="Blueprint on GitHub">
+                      <svg class="fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 0a10 10 0 0 0-3.16 19.49c.5.1.68-.22.68-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.1.39-1.99 1.03-2.69a3.6 3.6 0 0 1 .1-2.64s.84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.37.2 2.4.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .26.18.58.69.48A10 10 0 0 0 10 0"></path></svg>
+                    </a>
+                    <a class="block flex items-center text-gray-500 hover:text-blue-600" href="https://twitter.com/laravelshift" title="Blueprint on Twitter">
+                      <svg class="fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M6.29 18.25c7.55 0 11.67-6.25 11.67-11.67v-.53c.8-.59 1.49-1.3 2.04-2.13-.75.33-1.54.55-2.36.65a4.12 4.12 0 0 0 1.8-2.27c-.8.48-1.68.81-2.6 1a4.1 4.1 0 0 0-7 3.74 11.65 11.65 0 0 1-8.45-4.3 4.1 4.1 0 0 0 1.27 5.49C2.01 8.2 1.37 8.03.8 7.7v.05a4.1 4.1 0 0 0 3.3 4.03 4.1 4.1 0 0 1-1.86.07 4.1 4.1 0 0 0 3.83 2.85A8.23 8.23 0 0 1 0 16.4a11.62 11.62 0 0 0 6.29 1.84"></path></svg>
+                    </a>
+                  </div>
+                </div>
+
+                              </div>
+            </div>
+          </div>
+        </header>
+
+        <main role="main" class="w-full flex-auto mt-32">
+            <div class="flex flex-col items-center mt-32 text-gray-700">
+    <h1 class="text-6xl font-light leading-none mb-2">404</h1>
+
+    <h2 class="text-3xl">Page not found</h2>
+
+    <hr class="block w-full max-w-lg mx-auto my-8 border">
+
+    <p class="text-xl">
+        Need to update this page? See the <a title="404 Page Documentation" href="https://jigsaw.tighten.co/docs/custom-404-page/"> Jigsaw documentation</a>.
+    </p>
+</div>
+        </main>
+
+        <script src="/assets/build/js/main.js?id=817ced980db4d3c918bb"></script>
+
+                    <script type="text/javascript">
+            document.onkeyup = function (e) {
+                if (e.key === '/') {
+                    document.getElementById('docsearch-input').focus();
+                }
+            };
+
+            docsearch({
+                apiKey: 'e7636fa4e7966c21a67c7cc2e10de70c',
+                indexName: 'laravelshift_blueprint',
+                appId: 'AV69P8LQ8H',
+                inputSelector: '#docsearch-input',
+                debug: false // Set debug to true if you want to inspect the dropdown
+            });
+        </script>
+    
+        <footer class="text-center text-sm pb-6" role="contentinfo">
+            <p><a href="https://github.com/laravel-shift/blueprint">Blueprint</a> is an open source project by <a href="https://laravelshift.com" rel="external">Shift</a>. These docs were built with <a href="http://jigsaw.tighten.co" rel="external">Jigsaw</a> and <a href="https://tailwindcss.com" rel="external">Tailwind CSS</a>.
+        </footer>
+    </body>
+</html>
