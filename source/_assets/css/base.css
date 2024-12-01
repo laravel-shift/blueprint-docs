@@ -24,7 +24,7 @@ blockquote {
 }
 
 code {
-    @apply bg-gray-200;
+    @apply bg-gray-300;
     @apply px-2;
     @apply py-px;
     @apply rounded;
@@ -106,15 +106,10 @@ li {
 ol,
 ul {
     @apply my-4;
-    @apply list-inside;
 }
 
 ol {
     @apply list-decimal;
-}
-
-ul {
-    @apply list-disc;
 }
 
 p {
@@ -126,7 +121,7 @@ p {
 }
 
 pre {
-    @apply bg-gray-100;
+    @apply bg-gray-200;
     @apply leading-loose;
     @apply my-6;
     @apply overflow-x-auto;

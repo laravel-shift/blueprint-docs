@@ -1,15 +1,14 @@
-let mix = require('laravel-mix');
-let tailwindcss = require('tailwindcss');
-require('laravel-mix-purgecss');
+const mix = require('laravel-mix');
 
 mix.disableSuccessNotifications();
-mix.setPublicPath('source/assets/build/');
+mix.setPublicPath('source/assets/build');
 
 mix.js('source/_assets/js/main.js', 'js')
+    .css('source/_assets/css/main.css', 'css/main.css', [
+        require('postcss-import'),
+        require('tailwindcss/nesting'),
+        require('tailwindcss'),
+    ])
+    .options({processCssUrls: false})
     .sourceMaps()
-    .sass('source/_assets/sass/main.scss', 'css/main.css')
-    .options({
-        processCssUrls: false,
-        postCss: [tailwindcss()],
-    })
     .version();

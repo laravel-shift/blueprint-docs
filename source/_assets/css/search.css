@@ -4,21 +4,35 @@
     background-repeat: no-repeat;
     text-indent: 1.2em;
 
-    &__wrapper {
-        @apply absolute;
-        @apply bg-white;
-        @apply mt-7;
-        @apply left-0;
-        @apply top-0;
-        @apply px-4;
-        @apply w-full;
-        @apply z-10;
-
-        @screen md {
-            @apply mt-0;
-            @apply px-0;
-            @apply relative;
+    @screen lg {
+        &:focus {
+            @apply w-2/3;
         }
+    }
+
+    @screen xl {
+        &:focus {
+            @apply w-1/2;
+        }
+    }
+
+
+}
+
+.docsearch-input__wrapper {
+    @apply absolute;
+    @apply bg-white;
+    @apply mt-7;
+    @apply left-0;
+    @apply top-0;
+    @apply px-4;
+    @apply w-full;
+    @apply z-10;
+
+    @screen md {
+        @apply mt-0;
+        @apply px-0;
+        @apply relative;
     }
 }
 
@@ -27,9 +41,10 @@
     @apply w-full;
 
     .ds-dropdown-menu {
-        width: 100% !important;
-        max-width: 100% !important;
-        min-width: 0 !important;
+        @apply w-full;
+
+        max-width: 750px !important;
+        min-width: auto !important;
 
         .algolia-docsearch-suggestion {
             .algolia-docsearch-suggestion--content {

@@ -1,7 +1,7 @@
 .nav-menu {
     @apply -mt-12;
     @apply -mx-8;
-    @apply bg-gray-100;
+    @apply bg-gray-200;
     @apply mb-8;
     @apply pb-4;
     @apply pt-8;
@@ -20,10 +20,6 @@
         @apply pt-0;
         @apply shadow-none;
         @apply w-1/4;
-    }
-
-    ul {
-        @apply list-none
     }
 }
 
