@@ -1,13 +1,8 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  purge: {
-    mode: 'all',
-    content: ['./build_production/**/*.html'],
-    options: {
-      safelist: ['algolia-autocomplete', 'ds-dropdown-menu'],
-    },
-  },
+  content: ['./build_production/**/*.html'],
+  safelist: ['algolia-autocomplete', 'ds-dropdown-menu'],
   theme: {
     extend: {
       fontFamily: {
@@ -43,13 +38,6 @@ module.exports = {
       '4xl': '2.125rem',
       '5xl': '2.625rem',
       '6xl': '10rem',
-    },
-  },
-  variants: {
-    extend: {
-      borderRadius: ['focus'],
-      borderWidth: ['active', 'focus'],
-      width: ['focus'],
     },
   },
   plugins: [
