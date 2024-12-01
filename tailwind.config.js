@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   purge: {
     mode: 'all',
@@ -27,6 +29,11 @@ module.exports = {
       },
       boxShadow: {
         lg: '0 -1px 27px 0 rgba(0, 0, 0, 0.04), 0 4px 15px 0 rgba(0, 0, 0, 0.08)',
+      },
+      colors: {
+        gray: colors.blueGray,
+        blue: colors.sky,
+        purple: colors.purple,
       },
     },
     fontSize: {

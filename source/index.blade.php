@@ -12,7 +12,7 @@
 
             <div class="flex my-10">
                 <a href="/docs/getting-started" title="Blueprint documentation" class="bg-blue-500 hover:bg-blue-600 font-normal text-white hover:text-white rounded mr-4 py-2 px-6">Get Started</a>
-                <a href="https://laracasts.com/series/guest-spotlight/episodes/9" title="Blueprint spotlight on Laracasts" class="bg-gray-400 hover:bg-gray-600 text-blue-900 font-normal hover:text-white rounded py-2 px-6" rel="external">Watch an Overview</a>
+                <a href="https://laracasts.com/series/guest-spotlight/episodes/9" title="Blueprint spotlight on Laracasts" class="bg-gray-300 hover:bg-gray-500 text-blue-900 font-normal hover:text-white rounded py-2 px-6" rel="external">Watch an Overview</a>
             </div>
         </div>
 
