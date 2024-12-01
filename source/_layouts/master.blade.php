@@ -62,7 +62,7 @@
                 </div>
               </div>
 
-              <div class="flex flex-grow lg:w-3/4 xl:w-4/5">
+              <div class="flex grow lg:w-3/4 xl:w-4/5">
                 <div class="w-full lg:px-6 xl:w-3/4 xl:px-12">
                     @if ($page->docsearchApiKey && $page->docsearchIndexName)
                         @include('_nav.search-input')
