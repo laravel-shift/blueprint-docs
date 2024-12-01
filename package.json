@@ -1,17 +1,23 @@
 {
     "private": true,
     "scripts": {
-        "dev": "mix",
-        "watch": "mix watch",
-        "staging": "NODE_ENV=staging mix",
-        "prod": "mix --production"
+        "local": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --env=local --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "staging": "cross-env NODE_ENV=staging node_modules/webpack/bin/webpack.js --progress --hide-modules --env=staging --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --env=production --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "dev": "npm run local",
+        "watch": "npm run local -- --watch"
     },
     "devDependencies": {
-        "docsearch.js": "^2.5.2",
+        "browser-sync": "^2.26.3",
+        "browser-sync-webpack-plugin": "^2.0.1",
+        "cross-env": "^3.2.3",
+        "docsearch.js": "^2.6.2",
+        "extra-watch-webpack-plugin": "^1.0.3",
         "hasbin": "^1.2.3",
         "highlight.js": "^10.4.1",
-        "laravel-mix": "^6.0.39",
-        "laravel-mix-jigsaw": "^2.1.1",
+        "laravel-mix": "^4.0.0",
+        "laravel-mix-purgecss": "^3.0.0",
+        "node-cmd": "^3.0.0",
         "sass": "^1.15.2",
         "sass-loader": "^7.1.0",
         "tailwindcss": "^1.4.5",
