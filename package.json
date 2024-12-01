@@ -12,6 +12,7 @@
         "prod": "npm run production"
     },
     "devDependencies": {
+        "autoprefixer": "^10.4.0",
         "browser-sync": "^2.26.3",
         "browser-sync-webpack-plugin": "^2.0.1",
         "cross-env": "^3.2.3",
@@ -22,12 +23,12 @@
         "laravel-mix": "^6.0.12",
         "laravel-mix-purgecss": "^6.0.0",
         "node-cmd": "^3.0.0",
-        "sass": "^1.15.2",
-        "sass-loader": "^7.1.0",
+        "postcss": "^8.4.4",
+        "resolve-url-loader": "^5.0.0",
+        "sass": "^1.81.0",
+        "sass-loader": "^12.6.0",
         "tailwindcss": "^3.0.0",
         "vue-template-compiler": "^2.5.21",
-        "yargs": "^4.6.0",
-        "autoprefixer": "^10.4.0",
-        "postcss": "^8.4.4"
+        "yargs": "^4.6.0"
     }
 }
