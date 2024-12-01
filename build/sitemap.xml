@@ -2,102 +2,102 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
  <url>
   <loc>https://blueprint.laravel-shift.com</loc>
-  <lastmod>2024-07-15T12:42:38-04:00</lastmod>
+  <lastmod>2024-12-01T18:09:05-05:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://blueprint.laravel-shift.com/docs/controller-statements</loc>
-  <lastmod>2024-07-15T12:42:38-04:00</lastmod>
+  <lastmod>2024-12-01T18:09:05-05:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://blueprint.laravel-shift.com/docs/available-commands</loc>
-  <lastmod>2024-07-15T12:42:38-04:00</lastmod>
+  <lastmod>2024-12-01T18:09:05-05:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://blueprint.laravel-shift.com/docs/model-data-types</loc>
-  <lastmod>2024-07-15T12:42:38-04:00</lastmod>
+  <lastmod>2024-12-01T18:09:05-05:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://blueprint.laravel-shift.com/docs/generated-tests</loc>
-  <lastmod>2024-07-15T12:42:38-04:00</lastmod>
+  <lastmod>2024-12-01T18:09:05-05:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://blueprint.laravel-shift.com/docs/advanced-configuration</loc>
-  <lastmod>2024-07-15T12:42:38-04:00</lastmod>
+  <lastmod>2024-12-01T18:09:05-05:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://blueprint.laravel-shift.com/docs/videos</loc>
-  <lastmod>2024-07-15T12:42:38-04:00</lastmod>
+  <lastmod>2024-12-01T18:09:05-05:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://blueprint.laravel-shift.com/docs/model-relationships</loc>
-  <lastmod>2024-07-15T12:42:38-04:00</lastmod>
+  <lastmod>2024-12-01T18:09:05-05:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://blueprint.laravel-shift.com/docs/getting-started</loc>
-  <lastmod>2024-07-15T12:42:38-04:00</lastmod>
+  <lastmod>2024-12-01T18:09:05-05:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://blueprint.laravel-shift.com/docs/keys-and-indexes</loc>
-  <lastmod>2024-07-15T12:42:38-04:00</lastmod>
+  <lastmod>2024-12-01T18:09:05-05:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://blueprint.laravel-shift.com/docs/contributing</loc>
-  <lastmod>2024-07-15T12:42:38-04:00</lastmod>
+  <lastmod>2024-12-01T18:09:05-05:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://blueprint.laravel-shift.com/docs/defining-controllers</loc>
-  <lastmod>2024-07-15T12:42:38-04:00</lastmod>
+  <lastmod>2024-12-01T18:09:05-05:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://blueprint.laravel-shift.com/docs/generating-database-seeders</loc>
-  <lastmod>2024-07-15T12:42:38-04:00</lastmod>
+  <lastmod>2024-12-01T18:09:05-05:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://blueprint.laravel-shift.com/docs/controller-shorthands</loc>
-  <lastmod>2024-07-15T12:42:38-04:00</lastmod>
+  <lastmod>2024-12-01T18:09:05-05:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://blueprint.laravel-shift.com/docs/model-shorthands</loc>
-  <lastmod>2024-07-15T12:42:38-04:00</lastmod>
+  <lastmod>2024-12-01T18:09:05-05:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://blueprint.laravel-shift.com/docs/defining-models</loc>
-  <lastmod>2024-07-15T12:42:38-04:00</lastmod>
+  <lastmod>2024-12-01T18:09:05-05:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://blueprint.laravel-shift.com/docs/installation</loc>
-  <lastmod>2024-07-15T12:42:38-04:00</lastmod>
+  <lastmod>2024-12-01T18:09:05-05:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://blueprint.laravel-shift.com/docs/model-references</loc>
-  <lastmod>2024-07-15T12:42:38-04:00</lastmod>
+  <lastmod>2024-12-01T18:09:05-05:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://blueprint.laravel-shift.com/docs/extending-blueprint</loc>
-  <lastmod>2024-07-15T12:42:38-04:00</lastmod>
+  <lastmod>2024-12-01T18:09:05-05:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://blueprint.laravel-shift.com/docs/generating-components</loc>
-  <lastmod>2024-07-15T12:42:38-04:00</lastmod>
+  <lastmod>2024-12-01T18:09:05-05:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
 </urlset>
