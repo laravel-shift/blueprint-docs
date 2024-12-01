@@ -20,8 +20,10 @@
         "node-cmd": "^3.0.0",
         "sass": "^1.15.2",
         "sass-loader": "^7.1.0",
-        "tailwindcss": "^1.4.5",
+        "tailwindcss": "^2.2.16",
         "vue-template-compiler": "^2.5.21",
-        "yargs": "^4.6.0"
+        "yargs": "^4.6.0",
+        "autoprefixer": "^10.4.0",
+        "postcss": "^8.3.11"
     }
 }
