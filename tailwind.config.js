@@ -23,10 +23,6 @@ module.exports = {
         '7xl': '80rem',
         '8xl': '88rem',
       },
-      spacing: {
-        7: '1.75rem',
-        9: '2.25rem',
-      },
       boxShadow: {
         lg: '0 -1px 27px 0 rgba(0, 0, 0, 0.04), 0 4px 15px 0 rgba(0, 0, 0, 0.08)',
       },
@@ -50,9 +46,11 @@ module.exports = {
     },
   },
   variants: {
-    borderRadius: ['responsive', 'focus'],
-    borderWidth: ['responsive', 'active', 'focus'],
-    width: ['responsive', 'focus'],
+    extend: {
+      borderRadius: ['focus'],
+      borderWidth: ['active', 'focus'],
+      width: ['focus'],
+    },
   },
   plugins: [
     function ({ addUtilities }) {
