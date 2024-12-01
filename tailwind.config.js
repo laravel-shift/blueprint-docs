@@ -5,7 +5,7 @@ module.exports = {
     mode: 'all',
     content: ['./build_production/**/*.html'],
     options: {
-      whitelist: ['algolia-autocomplete', 'ds-dropdown-menu'],
+      safelist: ['algolia-autocomplete', 'ds-dropdown-menu'],
     },
   },
   theme: {
