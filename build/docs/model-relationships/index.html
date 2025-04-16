@@ -338,7 +338,7 @@
       hasMany: Comment:reply
 </code></pre>
 
-<p>Blueprint will automatically pluralize the alias correctly based on the relationship type. In the case of a <code>belongsToMany</code> relationship, an alias will also be used as the pivot table name.</p>
+<p>Blueprint will automatically pluralize the alias correctly based on the relationship type.</p>
 
 <p>Sometimes you may want to use an <a href="https://laravel.com/docs/eloquent-relationships#defining-custom-intermediate-table-models">intermediate model</a> for a <code>belongsToMany</code> relationship. If so, you may prefix the alias with an ampersand (<code>&amp;</code>) and reference the model name. For example:</p>
 
