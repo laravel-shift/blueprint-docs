@@ -7,6 +7,7 @@ section: content
 ## Blueprint Videos {#blueprint-videos}
 Below are a list of videos which demonstrate using Blueprint.
 
+- [Ship Faster with Blueprint](https://www.youtube.com/watch?v=Jna0DOgnxds) on YouTube
 - [Quick Demo](https://www.youtube.com/watch?v=A_gUCwni_6c) on YouTube
 - [Rapid Code Generation With Blueprint](https://laracasts.com/series/guest-spotlight/episodes/9) on Laracasts
 - [Create Models with Blueprint](https://laracasts.com/series/rapid-laravel-development-with-filament/episodes/1) on Laracasts
